@@ -32,6 +32,14 @@ html {
   color: var(--tertiary-color);
 }
 
+.card__link {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--accent-color);
+}
+
 .nav__aside {
   position: fixed;
   height: 100vh;
