@@ -8,9 +8,9 @@
 
   <link rel="icon" href="/assets/favicon.ico" />
 
-  <link href="/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css' />
+  <link href="/style.css" rel="stylesheet">
 
   <title>{{ site.title }}</title>
 </head>
@@ -35,10 +35,12 @@
       <aside class="nav__mobile__aside">
         <div class="nav__header__container">
           <p class="nav__header">Harrison Favour</p>
-          <button id="open-nav" class="nav__toggle" onclick="openMobileNav()"><span class="breadcrumb"></span></button>
+          <button id="open-nav" class="nav__toggle" aria-label="Open navigation" onclick="openMobileNav()">
+            <span class="breadcrumb"></span>
+          </button>
         </div>
         <nav id="nav-content" class="sidenav__mobile">
-          <button id="close-nav" class="nav__toggle__collapse" onclick="closeMobileNav()">
+          <button id="close-nav" aria-label="Close navigation" class="nav__toggle__collapse" onclick="closeMobileNav()">
             <span class="cancel"></span>
           </button>
           <ul class="nav__collapse">
@@ -54,12 +56,31 @@
       <aside class="social__aside">
         <nav>
           <ul>
-            <li><a href="https://github.com/grantfayvor"><span class="fa fa-github fa-lg"></span></a></li>
-            <li><a href="https://twitter.com/hyper_debugger"><span class="fa fa-twitter fa-lg"></span></a></li>
-            <li><a href="https://www.linkedin.com/in/favour-harrison-5aa312a9/"><span class="fa fa-linkedin fa-lg"></span></a>
+            <li>
+              <a href="https://github.com/grantfayvor" aria-label="Github link">
+                <span class="fa fa-github fa-lg"></span>
+              </a>
             </li>
-            <li><a href="https://medium.com/@hyper_debugger"><span class="fa fa-medium fa-lg"></span></a></li>
-            <li><a href="mailto:fayvorharrison101@gmail.com"><span class="fa fa-envelope fa-lg"></span></a></li>
+            <li>
+              <a href="https://twitter.com/hyper_debugger" aria-label="Twitter link">
+                <span class="fa fa-twitter fa-lg"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/favour-harrison-5aa312a9/" aria-label="LinkedIn link">
+                <span class="fa fa-linkedin fa-lg"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://medium.com/@hyper_debugger" aria-label="Medium link">
+                <span class="fa fa-medium fa-lg"></span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:fayvorharrison101@gmail.com" aria-label="Email me">
+                <span class="fa fa-envelope fa-lg"></span>
+              </a>
+            </li>
           </ul>
         </nav>
       </aside>
