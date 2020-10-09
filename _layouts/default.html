@@ -102,6 +102,7 @@
     function openMobileNav() {
       const nav = document.getElementById("nav-content");
       nav.style.visibility = "visible";
+      nav.classList.add("menu-opened");
       const oNavButton = document.getElementById("open-nav");
       oNavButton.style.visibility = "hidden";
       const cNavButton = document.getElementById("close-nav");
@@ -111,6 +112,7 @@
     function closeMobileNav() {
       const nav = document.getElementById("nav-content");
       nav.style.visibility = "hidden";
+      nav.classList.remove("menu-opened");
       const cNavButton = document.getElementById("close-nav");
       cNavButton.style.visibility = "hidden";
       const oNavButton = document.getElementById("open-nav");
