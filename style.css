@@ -354,13 +354,17 @@ article>* {
 }
 
 .company__header>h3 {
-  font-weight: bold;
-  font-size: 16px;
   line-height: 19px;
-  color: var(--tertiary-color);
   display: inline-block;
   margin-top: 10px;
   margin-bottom: 0px;
+}
+
+.company__header>h3 a {
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--tertiary-color);
+  text-decoration: none;
 }
 
 .company__header>small {
