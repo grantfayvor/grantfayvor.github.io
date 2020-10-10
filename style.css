@@ -33,6 +33,18 @@ html {
   color: var(--secondary-color);
 }
 
+.button__to__link {
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0px;
+}
+
+.button__to__link:focus, .button__to__link:active {
+  outline: none;
+}
+
 .card__link {
   font-family: Lato;
   font-style: normal;
@@ -207,7 +219,7 @@ section#end p {
   margin-bottom: 40px;
 }
 
-article>h3 {
+article>h1 {
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
@@ -318,6 +330,72 @@ article>* {
 .cancel {
   display: block;
   content: url(./assets/cancel.svg);
+}
+
+.experience__list {
+  list-style-type: none;
+  padding: 0px;
+  border-left: 1px solid var(--light-pink);
+}
+
+.experience__list li {
+  margin-bottom: 40px;
+  padding-left: 30px;
+}
+
+.experience__list p {
+  line-height: 26px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.company__header {
+  margin-bottom: 20px;
+} 
+
+.company__header>h3 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--tertiary-color);
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.company__header>small {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--tertiary-color);
+  float: right; 
+  margin-top: 10px; 
+}
+
+.experience__title::before {
+  width: 20px;
+  display: inline-block;
+  content: " ";
+  position: absolute;
+  margin-left: -42px;
+  height: 20px;
+  border: 1px solid var(--light-pink);
+  border-radius: 50%;
+  background: var(--primary-color);
+}
+
+.circle__filler {
+  width: 40px;
+  height: 40px;
+  margin-top: -18px;
+  margin-bottom: -18px;
+  display: inline-block;
+  margin-left: -44px;
+  background: var(--primary-color);
+}
+
+.hidden {
+  display: none;
 }
 
 @media (max-width: 600px) {
@@ -494,5 +572,22 @@ article>* {
   .nav__collapse a {
     color: var(--white);
     text-decoration: none;
+  }
+  .experience__list {
+    border: none;
+  }
+  .circle__filler {
+    display: none;
+  }
+  .experience__list li {
+    padding-left: 0px;
+  }
+  .company__header>h3 {
+    display: block;
+  }
+  .company__header>small {
+    display: block;
+    float: none;
+    font-weight: normal;
   }
 }

@@ -2,7 +2,6 @@
 title: Harrison Favour
 layout: default
 ---
-<!-- <p id="about" style="position:absolute;top:0;visibility:hidden;display:block;">about section placeholder</p> -->
 
 <section id="about">
   <header>
@@ -12,12 +11,12 @@ layout: default
     <span>ABOUT</span>
   </aside>
   <article>
-    <h3>Software Engineer</h3>
+    <h2>Software Engineer</h2>
     <p>
       Hello ______________,
     </p>
     <p>
-      I am a Software Engineer with expertise in building secure and scalable enterprise systems. With over 5
+      I am a Software Engineer with expertise in building secure and scalable enterprise syststrongs. With over 5
       years of experience as a developer, I have worked with various languages during this period including; PHP,
       Java, C# and in recent times specializing on JavaScript and Golang.
       I've worked in very diverse teams of different sizes during this rollercoaster 5 year ride.
@@ -38,6 +37,130 @@ layout: default
   </article>
 </section>
 
+<section id="experience">
+  <header>
+    <h1>Experience</h1>
+  </header>
+  <aside class="section__aside">
+    <span>EXPERIENCE</span>
+  </aside>
+  <ul class="experience__list">
+    <li>
+      <span class="circle__filler"></span>
+      <strong class="experience__title">Lead Software Engineer</strong>
+      <div class="company__header">
+        <h3>Tenece Professional Services</h3>
+        <small>Mar 2019 – Sep 2020</small>
+      </div>
+      <div id="tenece-1" class="experience__summary">
+        <p>
+          Worked with a team to deliver a highly scalable and configurable multi-tenant solution for the company's
+          school
+          manager service. This product (Dynamo) was developed to enable simple setup of very similar-looking
+          applications
+          and to enable code reuse and customizations through configurations by the clients.
+        </p>
+        <p>
+          Dynamo directly improved the company's school manager offering and is, in fact, being used by about 5 schools
+          being serviced by the company with around 20,000 students across. Collaborated to work on the back-end of
+          various
+          internal products being used by the company including functional libraries being used by the development team.
+        </p>
+        <p>
+          Led the automation of DevOps practices in the company through the introduction of CI/ CD, proper code
+          versioning, etc which reduced development time and infrastructure downtime. Mentored various members of the
+          team
+          and frequently
+          held pair programming sessions with the team.
+        </p>
+      </div>
+      <button type="button" class="card__link button__to__link" onclick="toggleExperience(this, 'tenece-1');">View Less</button>
+    </li>
+    <li>
+      <span class="circle__filler"></span>
+      <strong class="experience__title">Software Engineer</strong>
+      <div class="company__header">
+        <h3>Tenece Professional Services</h3>
+        <small>Nov 2017 - Mar 2019</small>
+      </div>
+      <div id="tenece-2" class="experience__summary hidden">
+        <p>
+          Worked on upgrading the school manager service offered by the company through the development of the Dynamo
+          framework.
+        </p>
+        <p>
+          Worked on implementing school manager features using the Dynamo framework.
+        </p>
+        <p>
+          Built various internal products including Voucher processing system.
+        </p>
+        <p>
+          Understudy the company’s School Manager service offering.
+        </p>
+      </div>
+      <button type="button" class="card__link button__to__link" onclick="toggleExperience(this, 'tenece-2');">View More</button>
+    </li>
+    <li>
+      <span class="circle__filler"></span>
+      <strong class="experience__title">Training Facilitator</strong>
+      <div class="company__header">
+        <h3>Genesys Tech Hub</h3>
+        <small>Feb 2018 – Sep 2020</small>
+      </div>
+      <div id="genesys" class="experience__summary hidden">
+        <p>
+          Tutor beginner-level Software Developers (about 100 developers right now) and scale them into intermediate
+          positions.
+        </p>
+        <p>
+          Mentor budding Software Developers and provide guidance in their Software Development Journey.
+        </p>
+      </div>
+      <button type="button" class="card__link button__to__link" onclick="toggleExperience(this, 'genesys');">View More</button>
+    </li>
+    <li>
+      <span class="circle__filler"></span>
+      <strong class="experience__title">Training Facilitator</strong>
+      <div class="company__header">
+        <h3>Tribesquare Inc.</h3>
+        <small>Dec 2018 - July 2019</small>
+      </div>
+      <div id="tribesquare" class="experience__summary hidden">
+        <p>
+          Curated course content for NodeJS, Laravel track for tutoring program.
+        </p>
+        <p>
+          Tutored and mentored beginner level Software Developers.
+        </p>
+      </div>
+      <button type="button" class="card__link button__to__link" onclick="toggleExperience(this, 'tribesquare');">View More</button>
+    </li>
+    <li>
+      <span class="circle__filler"></span>
+      <strong class="experience__title">Software Developer Intern</strong>
+      <div class="company__header">
+        <h3>TeamApt Limited</h3>
+        <small>May 2016 – Oct 2016</small>
+      </div>
+      <div id="teamapt" class="experience__summary hidden">
+        <p>
+          Introduced to enterprise application development and collaborated with other developers to build Fintech
+          software
+          solutions for client banks.
+        </p>
+        <p>
+          Built features for the company's merchant processing system to enable the onboarding of new merchants and the
+          registration of their services.
+        </p>
+        <p>
+          Build fluent APIs using Spring Boot framework, spring-data-jpa and MySQL.
+        </p>
+      </div>
+      <button type="button" class="card__link button__to__link" onclick="toggleExperience(this, 'teamapt');">View More</button>
+    </li>
+  </ul>
+</section>
+
 <section id="skills">
   <header>
     <h1>Technical Skills</h1>
@@ -46,28 +169,46 @@ layout: default
     <span>SKILLS</span>
   </aside>
   <article>
-    <h3>Software Engineer</h3>
     <p>
-      Hello ______________,
+      I started out I believe, with PHP sometime when I was in the university. I wrote a bit of procedural PHP
+      and then delved into Object-oriented programming with Java after that. I explored C++ and JavaScript also while I
+      was in school. Internship in 2016
+      helped me become better at writing Java and I also got introduced to Spring Boot and AngularJS as those were the
+      frameworks of choice at the company.
+      It was also a time of intense exploration as I worked my way around so many programming languages including
+      Python, R, Scala, Kotlin, C, Ruby, etc. I think
+      that helped me with my understanding of programming languages. I did a bit of C# and ASP.NET MVC at some point as
+      well. Since then I have specialized in JavaScript and Golang.
     </p>
-    <p>
-      I am a Software Engineer with expertise in building secure and scalable enterprise systems. With over 5
-      years of experience as a developer, I have worked with various languages during this period including; PHP,
-      Java, C# and in recent times specializing on JavaScript and Golang.
-      I've worked in very diverse teams of different sizes during this rollercoaster 5 year ride.
-    </p>
-    <p>
-      I enjoy building products that people love and derive a lot of fun working on open source tools.
-      You might consider me a Full-Stack Engineer and in truth I am able to work on the frontend (I can't design
-      though), or backend, or on some random utility library, even Desktop applications (if they still make
-      those).
-      I've very recently been doing DevOps "things" and I find that quite enjoyable. You'd find me writing on <a
-        href="https://medium.com/@hyper_debugger" className="card__link">Medium</a> sometimes and here's a <a
-        className="card__link" href="https://medium.com/@hyper_debugger">link</a> if you are interested.
-    </p>
-    <p>
-      I absolutely love playing FIFA, you can reach out to setup a match!
-    </p>
+    <div>
+      <strong>Languages</strong>
+      <p>JavaScript | Golang | Java</p>
+    </div>
+    <div>
+      <strong>Backend Frameworks</strong>
+      <p>NodeJS | Hapi | SpringBoot | Echo | Gin</p>
+    </div>
+    <div>
+      <strong>Frontend Frameworks</strong>
+      <p>React</p>
+    </div>
+    <div>
+      <strong>DevOps</strong>
+      <p>Git | Linux | Gitlab CI/CD | Jenkins | Github Actions | Docker | Kubernetes | GCP | Apache | Nginx</p>
+    </div>
+    <div>
+      <strong>Databases/ Data store</strong>
+      <p>MongoDB | SQL | Firestore (Datastore) | Redis </p>
+    </div>
+    <div>
+      <strong>Cloud Technologies</strong>
+      <p>Cloud Functions | Firebase | Compute Engine | App Engine | Digital Ocean | Firestore | Cloud Storage | Cloud
+        Pub/Sub | Google Stackdriver</p>
+    </div>
+    <div>
+      <strong>Message Brokers</strong>
+      <p>RabbitMQ | Cloud Pub/Sub | Spring Cloud Stream</p>
+    </div>
   </article>
 </section>
 <section id="portfolio">
@@ -82,7 +223,7 @@ layout: default
       Hey, what have I done during my time as a Software Developer? Well here you find out.
     </p>
     <p>
-      I am a Software Engineer with expertise in building secure and scalable enterprise systems. With over 5
+      I am a Software Engineer with expertise in building secure and scalable enterprise syststrongs. With over 5
       years of experience as a developer, I have worked with various languages during this period including; PHP,
       Java, C# and in recent times specializing on JavaScript and Golang.
       I've worked in very diverse teams of different sizes during this rollercoaster 5 year ride.
@@ -106,3 +247,14 @@ layout: default
     <p>The End...</p>
   </article>
 </section>
+
+<script>
+  function toggleExperience(elem, id) {
+    document.getElementById(id).classList.toggle("hidden");
+    if (elem.innerText === "View Less") {
+      elem.innerText = "View More";
+    } else {
+      elem.innerText = "View Less";
+    }
+  }
+</script>
