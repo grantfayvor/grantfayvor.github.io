@@ -112,10 +112,6 @@ html {
   margin-left: 21.6%;
 }
 
-.sidenav>p:first-child {
-  display: none;
-}
-
 nav>ul {
   list-style-type: none;
   padding: 0;
@@ -323,12 +319,12 @@ article>* {
 
 .breadcrumb {
   display: block;
-  content: url(./assets/breadcrumb.svg);
+  content: url(./breadcrumb.svg);
 }
 
 .cancel {
   display: block;
-  content: url(./assets/cancel.svg);
+  content: url(./cancel.svg);
 }
 
 .experience__list {
@@ -434,9 +430,6 @@ article>* {
     margin-top: 55px;
     width: 92vw;
     padding-right: 4vw;
-  }
-  .sidenav>p:first-child {
-    display: inherit;
   }
   section#about>header {
     margin-top: 0px;
