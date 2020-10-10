@@ -509,16 +509,16 @@ article>* {
     margin-top: 0px;
     border-left: none;
     width: 100vw;
-    height: 92vh;
+    height: 93vh;
     text-align: center;
     position: fixed;
     top: 0;
     left: 0;
     visibility: hidden;
-    transition: all 2s ease-out;
+    transition: all 1.5s ease-out;
   }
   .sidenav__mobile.menu-opened {
-    background: var(--accent-color);
+    background: var(--tertiary-color);
     transition: all 0.3s ease-in, background 0.5s ease-in;
     transition-delay: 0.25s;
   }
@@ -590,4 +590,7 @@ article>* {
     float: none;
     font-weight: normal;
   }
+  .fa.fa-lg {
+    -webkit-text-stroke-color: var(--light-accent-color);
+}
 }
