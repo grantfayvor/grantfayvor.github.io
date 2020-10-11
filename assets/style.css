@@ -92,13 +92,14 @@ html {
   background: var(--white);
   position: fixed;
   top: 0;
-  z-index: 9999;
+  z-index: 9;
 }
 
 .main__header>div:first-child {
   position: fixed;
   top: 40px;
   width: 17.0%;
+  z-index: 999;
 }
 
 .main__header p {
@@ -280,7 +281,7 @@ article>* {
   position: fixed;
   top: 25px;
   right: 9%;
-  z-index: 9999;
+  z-index: 99;
 }
 
 .contact__container>.contact__link {
