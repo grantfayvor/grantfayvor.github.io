@@ -16,10 +16,10 @@ layout: default
       Hello ______________,
     </p>
     <p>
-      I am a Software Engineer with expertise in building secure and scalable enterprise systems. With over 5
+      I am a Software Engineer with expertise in building secure and scalable enterprise systems. With over 7
       years of experience as a developer, I have worked with various languages during this period including; PHP,
       Java, C# and in recent times specializing on JavaScript and Golang.
-      I've worked in very diverse teams of different sizes during this rollercoaster 5 year ride.
+      I've worked in very diverse teams of different sizes during the course of my career.
     </p>
     <p>
       I enjoy building products that people love and derive a lot of fun working on open source tools.
@@ -34,8 +34,8 @@ layout: default
       I absolutely love playing FIFA, you can reach out to setup a match!
     </p>
     <p>
-      <b>P.S</b>: Ugh! At any point in time, my experiences on my website would most likely be outdated. 
-      Check my <a href="https://www.linkedin.com/in/favour-harrison-5aa312a9/" aria-label="LinkedIn link" class="card__link">LinkedIn profile</a> if that's what you're interested in.
+      <b>P.S</b>: Ugh! At any point in time, my experiences on my website might be outdated. 
+      Check my <a href="https://www.linkedin.com/in/favour-harrison" aria-label="LinkedIn link" class="card__link">LinkedIn profile</a> if that's what you're interested in.
     </p>
     <a class="contact__link" href="mailto:fayvorharrison101@gmail.com">Let's talk</a>
   </article>
@@ -51,12 +51,82 @@ layout: default
   <ul class="experience__list">
     <li>
       <span class="circle__filler"></span>
+      <strong class="experience__title">Senior Software Engineer</strong>
+      <div class="company__header">
+        <h3><a href="https://www.bitfinex.com">Bitfinex Inc.</a></h3>
+        <small>Mar 2021 – Present</small>
+      </div>
+      <div id="bitfinex" class="experience__summary">
+        <p>
+          Work primarily on the backend to build the KYC platform following compliance regulations.
+        </p>
+        <p>
+          Collaborate with team to plan and architect structure of database models, APIs, code, etc of the new KYC project.
+        </p>
+        <p>
+          Work with team to ensure coverage of FATF rule by integrating with relevant service providers.
+        </p>
+        <p>
+          Improve documentation of backend KYC project to make onboarding easier for new teammates.
+        </p>
+        <p>
+          Improve backend testing framework by implementing parallel tests, thereby shortening run time by 75%.
+        </p>
+      </div>
+      <button type="button" class="card__link button__to__link" onclick="toggleExperience(this, 'bitfinex');">View
+        Less</button>
+    </li>
+    <li>
+      <span class="circle__filler"></span>
+      <strong class="experience__title">Software Engineer</strong>
+      <div class="company__header">
+        <h3><a href="https://www.gitstart.com">Gitstart Inc.</a></h3>
+        <small>Oct 2020 – April 2021</small>
+      </div>
+      <div id="gitstart" class="experience__summary hidden">
+        <p>
+          Worked with a team on various client and internal projects including an insurance management solution, etc.
+        </p>
+        <p>
+          Reverse engineer client project to locate bottlenecks and improve on current solution for better run times.
+        </p>
+        <p>
+          Help team members with onboarding on client projects.
+        </p>
+      </div>
+      <button type="button" class="card__link button__to__link" onclick="toggleExperience(this, 'gitstart');">View
+        More</button>
+    </li>
+    <li>
+      <span class="circle__filler"></span>
+      <strong class="experience__title">Founder</strong>
+      <div class="company__header">
+        <h3><a href="https://www.hexcord.com">Hexcord</a></h3>
+        <small>Aug 2020 – Present</small>
+      </div>
+      <div id="hexcord" class="experience__summary hidden">
+        <p>
+          Architect individual services including a media server and web APIs.
+        </p>
+        <p>
+          Build service with scalability and security in mind using concepts such as rate-limiting to prevent 
+          DDOS attacks, etc. Deploying service images with Google App Engine and Linux VMs.
+        </p>
+        <p>
+          Work with UI designer to implement front-end interface while maintaining proper aesthetic design and accessibility.
+        </p>
+      </div>
+      <button type="button" class="card__link button__to__link" onclick="toggleExperience(this, 'hexcord');">View
+        More</button>
+    </li>
+    <li>
+      <span class="circle__filler"></span>
       <strong class="experience__title">Lead Software Engineer</strong>
       <div class="company__header">
         <h3><a href="https://www.tenece.com">Tenece Professional Services</a></h3>
         <small>Mar 2019 – Sep 2020</small>
       </div>
-      <div id="tenece-1" class="experience__summary">
+      <div id="tenece-1" class="experience__summary hidden">
         <p>
           Worked with a team to deliver a highly scalable and configurable multi-tenant solution for the company's
           school
@@ -79,7 +149,7 @@ layout: default
         </p>
       </div>
       <button type="button" class="card__link button__to__link" onclick="toggleExperience(this, 'tenece-1');">View
-        Less</button>
+        More</button>
     </li>
     <li>
       <span class="circle__filler"></span>
@@ -294,6 +364,13 @@ layout: default
         This is an open source library for scaffolding e-commerce applications.
       </p>
       <a href="/skaffold">Check it out</a>
+    </div>
+    <div class="portfolio__content">
+      <strong>Hexcord Media Server</strong>
+      <p>
+        This is an open source library for quickly deploying a full fledged media server that can stream WebRTC to either MKV format or RTMP.
+      </p>
+      <a href="/hexcordmediaserver">Check it out</a>
     </div>
   </article>
 </section>
